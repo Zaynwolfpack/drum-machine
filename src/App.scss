@@ -1,0 +1,63 @@
+:root{
+  --gray: #282828;
+  --blue: #3500D3;
+  --purpleblue: #240090;
+  --purple: #190061;
+  --drkpurple: #0C0032;
+}
+
+.App {
+  text-align: center;
+  background-color: black;
+  height: 99vh;
+  
+ 
+
+
+  #Title{
+    color: var(--blue);
+    margin: 1rem;
+    padding: 3rem;
+    font-size: 40px;
+    margin-bottom: 5rem;
+  }
+     
+  #drum-machine{
+    right: 50%;
+    background-color: var(--drkpurple);
+    outline: 5px solid var(--purple);
+    height: fit-content;
+    width: 660px;
+    align-items: center;
+    position: inherit;
+    margin: auto;
+    border-radius: 2%;
+
+    #display {
+      color: var(--blue);
+      right: 50%;
+    }
+    
+    .pad-bank{
+      width: 332px;
+      height: 272px;
+      position: relative;
+      border-radius: 3%;
+      background-color: var(--gray);
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      
+      .drum-pad {
+       background-color: var(--drkpurple);
+       width: 100px;
+       height: 80px;
+       margin-right: 10px;
+       border-radius: 5px;
+       padding-top: 35px;
+       box-sizing: border-box;
+       cursor: pointer;
+      
+      }
+    }
+     }
+}
